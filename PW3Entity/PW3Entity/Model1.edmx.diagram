@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2e2cae9af1f34dcca7953a6d10c1a7cd" Name="Diagram1">
+        <EntityTypeShape EntityType="PractikaPW1Model.Games" Width="1.5" PointX="7" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="PractikaPW1Model.Zhanres" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="PractikaPW1Model.FK__Games__Zhanre_ID__3B75D760" ManuallyRouted="true" >
+          <ConnectorPoint PointX="1.5" PointY="2.5053312174479174" />
+          <ConnectorPoint PointX="1.5" PointY="3.171742879457276" />
+          <ConnectorPoint PointX="3.2749994341284037" PointY="3.171742879457276" />
+          <ConnectorPoint PointX="3.2749994341284037" PointY="3.973498689544698" />
+          <ConnectorPoint PointX="5.0717211310306567" PointY="3.973498689544698" />
+          <ConnectorPoint PointX="5.0717211310306567" PointY="0.99433195551236508" />
+          <ConnectorPoint PointX="8.8374988082796335" PointY="0.99433195551236508" />
+          <ConnectorPoint PointX="8.8374988082796335" PointY="1.8122960550889373" />
+          <ConnectorPoint PointX="7" PointY="1.8122960550889373" />
+          <ConnectorPoint PointX="7" PointY="4" />
+        </AssociationConnector>
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

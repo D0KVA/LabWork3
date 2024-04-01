@@ -1,0 +1,35 @@
+﻿<Window x:Class="PW3Entity.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PW3Entity"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Column="0" Grid.Row="0" x:Name="dg" AutoGenerateColumns="False" IsEnabled="False" materialDesign:DataGridAssist.SelectedCellBorderBrush="Crimson" CanUserAddRows="False" ItemsSource="{Binding Items4}" Background="#FFFF00F0" BorderBrush="#19000000">
+        <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding NameGame}" Header="Название игры"/>
+                <DataGridTextColumn Binding="{Binding Zhanres.NameZhanre}" Header="Жанр"/>
+                <DataGridTextColumn Binding="{Binding Zhanres.DescriptionZhanre}" Header="Описание жанра"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.Column="0" Grid.Row="1"
+    Margin="2,0"
+    materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+    materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+    materialDesign:ButtonProgressAssist.Value="-1"
+    Content="Выход"
+    IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+    Style="{StaticResource MaterialDesignRaisedButton}" Click="Button_Click" />
+    </Grid>
+</Window>
